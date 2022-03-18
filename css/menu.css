@@ -59,3 +59,9 @@ img {
     width: 277px;
     height: 182px;
 }
+
+footer{display: flex; 
+    justify-content: space-between;
+    background-color: green;
+}
+footer p { color: white;}
