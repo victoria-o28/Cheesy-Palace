@@ -1,0 +1,15 @@
+body{
+    background-image: url("/Assets/Pizza_front.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    color: lightgreen;
+    /* font-size: larger; */
+    font-style: bold ;
+}
+
+h5{
+    color: white;
+}
