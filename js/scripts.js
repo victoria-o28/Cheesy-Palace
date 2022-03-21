@@ -125,3 +125,21 @@ function allowUncheck(e) {
 
 
 
+document.getElementById("deliver").onclick=function deliveryradioClicked() {
+    let text;
+    let location = prompt("Please enter your delivery Location:", "");
+    if (location == null || location == "") {
+        text = "Please fill in your address delivery location where your order will be delivered";
+    } else {
+        text = "Hello,Your order will be processed and delivered to " + location + ".Thank you for ordering at Cheesy Palace!";
+    }
+    document.getElementById("delivery").innerHTML = text;
+}
+
+document.getElementById("pick").onclick=function pickradioClicked() {
+    alert("You can pick up your order after 20-30 minutes");
+
+}
+
+
+
