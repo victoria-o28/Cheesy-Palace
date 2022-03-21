@@ -16,7 +16,7 @@
 [![Cheesy-Palace.png](https://i.postimg.cc/MZDp1kZH/Cheesy-Palace.png)](https://postimg.cc/NLKtwzHv)
 
 ## Live Link
-<p>Here is the live website URL:  </p> 
+<p>Here is the live website URL: https://victoria-o28.github.io/Cheesy-Palace/ </p> 
 
 ## Installation Requirement
 Open Terminal Ctrl+Alt+T
