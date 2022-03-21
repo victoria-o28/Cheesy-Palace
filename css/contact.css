@@ -1,10 +1,57 @@
-*{ padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+        url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
 }
 
-footer{display: flex; 
-    justify-content: space-between;
-    background-color: green;
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
 }
-footer p { color: white;}
+
+body {
+    background-color: peachpuff;
+    background-image: url("https://thumbs.dreamstime.com/b/delicious-pizza-ingredients-white-wooden-background-copy-space-158366780.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    margin-bottom: 10%;
+}
+
+#logo {
+    width: 2cm;
+    height: 2cm;
+    align-items: center;
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer  { display: flex;
+justify-content: space-between;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:green;
+    color: white;
+    text-align: center;
+}
+footer p{
+    color: white;
+}

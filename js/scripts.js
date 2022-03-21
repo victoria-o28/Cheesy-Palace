@@ -27,7 +27,7 @@ function ready() {
 }
 
 function checkoutClicked() {
-      var cartItems = document.getElementsByClassName('cart-items')[0]
+    var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
@@ -83,7 +83,7 @@ function addItemToCart(title, price, imageSrc) {
         </div>` //The ' indicates it's an html element gettin inputted
     cartRow.innerHTML = cartRowContents
     cartItems.append(cartRow)
-        //Adding event listeners to remove button and adding quntity to inc or decrease price
+    //Adding event listeners to remove button and adding quntity to inc or decrease price
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
@@ -106,26 +106,26 @@ function updateCartTotal() {
 
 document.querySelectorAll(
     'input[type=radio][name=delivery]').forEach((elem) => {
-  elem.addEventListener('click', allowUncheck);
-  // only needed if elem can be pre-checked
-  elem.previous = elem.checked;
+    elem.addEventListener('click', allowUncheck);
+    // only needed if elem can be pre-checked
+    elem.previous = elem.checked;
 });
 
 function allowUncheck(e) {
-  if (this.previous) {
-    this.checked = false;
-  }
-  // need to update previous on all elements of this group
-  // (either that or store the id of the checked element)
-  document.querySelectorAll(
-      `input[type=radio][name=${this.name}]`).forEach((elem) => {
-    elem.previous = elem.checked;
-  });
+    if (this.previous) {
+        this.checked = false;
+    }
+    // need to update previous on all elements of this group
+    // (either that or store the id of the checked element)
+    document.querySelectorAll(
+        `input[type=radio][name=${this.name}]`).forEach((elem) => {
+        elem.previous = elem.checked;
+    });
 }
 
 
 
-document.getElementById("deliver").onclick=function deliveryradioClicked() {
+document.getElementById("deliver").onclick = function deliveryradioClicked() {
     let text;
     let location = prompt("Please enter your delivery Location:", "");
     if (location == null || location == "") {
@@ -136,10 +136,7 @@ document.getElementById("deliver").onclick=function deliveryradioClicked() {
     document.getElementById("delivery").innerHTML = text;
 }
 
-document.getElementById("pick").onclick=function pickradioClicked() {
+document.getElementById("pick").onclick = function pickradioClicked() {
     alert("You can pick up your order after 20-30 minutes");
 
 }
-
-
-

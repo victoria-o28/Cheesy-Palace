@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" />
     <link href="/css/menu.css" rel="stylesheet" type="text/css" media="all" />
-       <title>Menu</title>
+    <title>Menu</title>
 </head>
 
 <body>
@@ -98,242 +98,243 @@
             </div>
         </div>
         <br><br><br>
-    <div class="form-group">
-        <div class="order">
-            <h3 class="shop-item-title">Select Pizza Flavour</h3>
+        <div class="form-group">
+            <div class="order">
+                <h3 class="shop-item-title">Select Pizza Flavour</h3>
+                <div class="shop-items">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label class='radiolabel'>
+                                <input type="radio" name="pizza" required="yes" />BBQ Steak</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label class='radiolabel'>
+                                <input type="radio" name="pizza" />Chicken BBQ</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label class='radiolabel'>
+                                <input type="radio" name="pizza" />Chicken Tikka</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label class='radiolabel'>
+                                <input type="radio" name="pizza" />Cheese Pizza</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <label class='radiolabel'>
+                                <input type="radio" name="pizza" />PeriPeri</label>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <section class="container content-section">
+            <h2 class="section-header">PRODUCT SIZE</h2>
             <div class="shop-items">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <label class='radiolabel'>
-                            <input type="radio" name="pizza" required="yes" />BBQ Steak</label>
+                <div class="shop-item">
+                    <span class="shop-item-title" id="size">Size Small</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Product_variants/small.png" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh400</span>
+                        <button class="btn btn-primary shop-item-button" id="try" type="button">ADD TO CART</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <label class='radiolabel'>
-                            <input type="radio" name="pizza" />Chicken BBQ</label>
+                <div class="shop-item">
+                    <span class="shop-item-title">Size Medium</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Product_variants/medium.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh800</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <label class='radiolabel'>
-                            <input type="radio" name="pizza" />Chicken Tikka</label>
+                <div class="shop-item">
+                    <span class="shop-item-title">Size Large</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Product_variants/large.png" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh1200</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <label class='radiolabel'>
-                            <input type="radio" name="pizza" />Cheese Pizza</label>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CRUST PREFERENCE</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Crispy crust</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Crust.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <label class='radiolabel'>
-                            <input type="radio" name="pizza" />PeriPeri</label>
+                <div class="shop-item">
+                    <span class="shop-item-title">Stuffed crust</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Crust.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
                     </div>
                 </div>
-            
-            </div>
-          
-        </div>
-    </div>
-    <section class="container content-section">
-        <h2 class="section-header">PRODUCT SIZE</h2>
-        <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title" id="size">Size Small</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Product_variants/small.png" alt="#" >
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh400</span>
-                    <button class="btn btn-primary shop-item-button" id="try" type="button">ADD TO CART</button>
+                <div class="shop-item">
+                    <span class="shop-item-title">Glutten-free crust</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Crust.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Size Medium</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Product_variants/medium.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh800</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">PIZZA TOPPINGS</h2>
+            <p id="p">Would you like to add some toppings for</p>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Onion</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Tomato</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Green Pepper</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Ham</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Chicken</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Bacon</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Cheese</span>
+                    <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg" alt="#">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Size Large</span>
-                <img class="shop-item-image" id="img-size"  src="/Assets/Menu/Product_variants/large.png" alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh1200</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">DRINKS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Water</span>
+                    <img class="shop-item-image" id="img-size" alt="#" src="/Assets/Menu/Drinks/Water_500ml.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coke</span>
+                    <img class="shop-item-image" id="img-size" alt="#" src="/Assets/Menu/Drinks/Coke_500ml.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh100</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Fanta Orange</span>
+                    <img class="shop-item-image" id="img-size" alt="#" src="/Assets/Menu/Drinks/fanta-orange-500ml.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Krest</span>
+                    <img class="shop-item-image" id="img-size" alt="#" src="/Assets/Menu/Drinks/Krest_500ml.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">ksh80</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="container content-section">
-        <h2 class="section-header">CRUST PREFERENCE</h2>
-        <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">Crispy crust</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Crust.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Stuffed crust</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Crust.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Glutten-free crust</span>
-                <img class="shop-item-image" id="img-size"src="/Assets/Menu/Crust.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container content-section">
-        <h2 class="section-header">PIZZA TOPPINGS</h2>
-        <p id="p">Would you like to add some toppings for</p>
-        <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">Onion</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Tomato</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Green Pepper</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div><div class="shop-item">
-                <span class="shop-item-title">Ham</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Chicken</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Bacon</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Cheese</span>
-                <img class="shop-item-image" id="img-size" src="/Assets/Menu/Toppings.jpg"  alt="#">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="container content-section">
-        <h2 class="section-header">DRINKS</h2>
-        <div class="shop-items">
-            <div class="shop-item">
-                <span class="shop-item-title">Water</span>
-                <img class="shop-item-image" id="img-size" alt="#" src="/Assets/Menu/Drinks/Water_500ml.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh80</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Coke</span>
-                <img class="shop-item-image" id="img-size" alt="#" src="/Assets/Menu/Drinks/Coke_500ml.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh100</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button> 
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Fanta Orange</span>
-                <img class="shop-item-image"  id="img-size" alt="#" src="/Assets/Menu/Drinks/fanta-orange-500ml.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh80</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-            <div class="shop-item">
-                <span class="shop-item-title">Krest</span>
-                <img class="shop-item-image" id="img-size" alt="#" src="/Assets/Menu/Drinks/Krest_500ml.jpg">
-                <div class="shop-item-details">
-                    <span class="shop-item-price">ksh80</span>
-                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section>
-        <h2 class="shop-item-tittle">DELIVERY OPTION</h2>
-        <div class="delivery-option">
-            <div class="row">
-                <div class="col-md-3">
-                    <input type="radio" name="delivery" id="pick" ><label for="pick">PICKUP</label>  
-                                        <img id="size" src="/Assets/Delivery/pick.png" alt="">
+        <section>
+            <h2 class="shop-item-tittle">DELIVERY OPTION</h2>
+            <div class="delivery-option">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="radio" name="delivery" id="pick"><label for="pick">PICKUP</label>
+                        <img id="size" src="/Assets/Delivery/pick.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <input type="radio" name="delivery" id="deliver"><label for="pick">DELIVERY</label> 
-                    <img id="size" src="/Assets/Delivery/Delivery.jpg" alt="">
+                <div class="row">
+                    <div class="col-md-3">
+                        <input type="radio" name="delivery" id="deliver"><label for="pick">DELIVERY</label>
+                        <img id="size" src="/Assets/Delivery/Delivery.jpg" alt="">
+                    </div>
+                    <p id="delivery"></p>
                 </div>
-                <p id="delivery"></p>
-            </div>
-            <br> <br>
-    </section>
+                <br> <br>
+        </section>
 
-    <section class="container content-section">
-        <h2 class="section-header">CART</h2>
-        <div class="cart-row">
-            <span class="cart-item cart-header cart-column">ITEM</span>
-            <span class="cart-price cart-header cart-column">PRICE</span>
-            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-        </div>
-        <div class="cart-items">
-        </div>
-        <div class="cart-total">
-            <strong class="cart-total-title">Total</strong>
-            <span class="cart-total-price">ksh0</span>
-        </div>
-        <button class="btn btn-primary btn-checkout" id="proceed" type="button">PROCEED TO CHECKOUT</button>
-    </section>
-        
-    <footer>
-        <p>Copyright &copy; 2022</p>
-        <p>Designed by Victoria Odhiambo</p>
-    </footer>
-    <script src="/js/scripts.js"></script>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">ksh0</span>
+            </div>
+            <button class="btn btn-primary btn-checkout" id="proceed" type="button">PROCEED TO CHECKOUT</button>
+        </section>
+
+        <footer>
+            <p>Copyright &copy; 2022</p>
+            <p>Designed by Victoria Odhiambo</p>
+        </footer>
+        <script src="/js/scripts.js"></script>
 
 
 </body>

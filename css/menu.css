@@ -4,23 +4,25 @@
 @font-face {
     font-family: "Booter - Zero Zero";
     src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+        url("Fonts/Booter - Zero Zero.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
-*{ padding: 0%;
+* {
+    padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: Raleway;
     color: #777;
 }
 
-body{
+body {
     background-color: peachpuff;
-    font-family: -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 .box {
     position: relative;
     background-image: url(/Assets/Pizza_front.jpg);
@@ -155,7 +157,7 @@ body{
     background-color: #CC4C4C;
 }
 
-#img-size{
+#img-size {
     width: 2cm;
     height: 2cm;
 }
@@ -165,7 +167,7 @@ img {
     height: 5cm;
 }
 
-.loli > img{
+.loli>img {
     width: 277px;
     height: 182px;
 }
@@ -197,7 +199,7 @@ img {
     margin-bottom: 15px;
 }
 
-.section-header{
+.section-header {
     margin: auto;
 }
 
@@ -297,15 +299,26 @@ img {
     font-size: 1.75em;
 }
 
-.delivery-option{  
-      display: flex;
-      align-items: center;
-      padding: 5px;
-      
+.delivery-option {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
 }
 
-footer{display: flex; 
+footer {
+    display: flex;
     justify-content: space-between;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: green;
+    color: white;
+    text-align: center;
 }
-footer p { color: white;}
+
+footer p {
+    color: white;
+}
