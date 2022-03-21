@@ -1,15 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{ padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
 body{
     background-image: url("/Assets/Pizza_front.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-h1{
+.box{
+    position: relative;
     color: lightgreen;
-    /* font-size: larger; */
+     font-size: xx-large;
     font-style: bold ;
+    border:1px solid orange;
+    height: 60vh;
+    text-align: center;
+    margin: auto;
+}
+
+#color{
+    color: lightgreen;
+}
+
+.logo{
+    text-align: right;
+    color: white;
+}
+
+#small{
+    width: 2cm;
+    height: 2cm;
 }
 
 h5{
     color: white;
+    font-size: xx-large;
 }
+
+.link{
+    text-decoration: none;
+    width: 4cm;
+    background-color: lightgreen;
+    border: 1px solid lightgreen;
+    font-style: bold;
+    font-weight: bolder;
+    margin : auto;
+    text-align: center;
+    display:flex;
+    color: black;
+}
+
