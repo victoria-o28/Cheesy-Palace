@@ -25,7 +25,7 @@ body {
 
 .box {
     position: relative;
-    background-image: url(/Assets/Pizza_front.jpg);
+    background-image: url("../Assets/Pizza_front.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
@@ -45,7 +45,6 @@ body {
     width: 6cm;
     height: 6cm;
     top: 30px;
-    /* border: 3px solid white; */
 
 }
 
@@ -53,9 +52,7 @@ body {
     width: 6cm;
     height: 6cm;
     top: 30px;
-    /* border: 3px solid white; */
-
-}
+  }
 
 .section-header {
     font-family: "Metal Mania";
