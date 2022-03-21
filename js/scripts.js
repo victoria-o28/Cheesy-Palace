@@ -27,16 +27,7 @@ function ready() {
 }
 
 function checkoutClicked() {
-    let text;
-    let location = prompt("Please enter your delivery Location:", "");
-    if (location == null || location == "") {
-        text = "Please fill in your address delivery location where your order will be delivered";
-    } else {
-        text = "Hello,Your order will be processed and delivered to " + location + ".Thank you for ordering at Cheesy Palace!";
-    }
-    document.getElementById("delivery").innerHTML = text;
-
-    var cartItems = document.getElementsByClassName('cart-items')[0]
+      var cartItems = document.getElementsByClassName('cart-items')[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
     }
@@ -112,3 +103,25 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = 'ksh' + total //Asigning the ksh
 }
+
+document.querySelectorAll(
+    'input[type=radio][name=delivery]').forEach((elem) => {
+  elem.addEventListener('click', allowUncheck);
+  // only needed if elem can be pre-checked
+  elem.previous = elem.checked;
+});
+
+function allowUncheck(e) {
+  if (this.previous) {
+    this.checked = false;
+  }
+  // need to update previous on all elements of this group
+  // (either that or store the id of the checked element)
+  document.querySelectorAll(
+      `input[type=radio][name=${this.name}]`).forEach((elem) => {
+    elem.previous = elem.checked;
+  });
+}
+
+
+
