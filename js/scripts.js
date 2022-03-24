@@ -26,12 +26,22 @@ function ready() {
     document.getElementsByClassName('btn-checkout')[0].addEventListener('click', checkoutClicked)
 }
 
-function checkoutClicked() {
-    var cartItems = document.getElementsByClassName('cart-items')[0]
-    while (cartItems.hasChildNodes()) {
-        cartItems.removeChild(cartItems.firstChild)
+//Selecting value of a radio button that's selected
+function getRadioValue() {
+    var ele = document.getElementsByName('pizza');
+
+    for (i = 0; i < ele.length; i++) {
+        if (ele[i].checked)
+            document.getElementById("pizzaselection").innerHTML = "Your order Items list and total price is displayed in the Cart above." + " Pizza Flavor selected: " 
+            + ele[i].value; 
     }
-    updateCartTotal()
+}
+
+function checkoutClicked(event) {
+    var button = event.target
+
+    getRadioValue()
+
 }
 
 function removeCartItem(event) {
@@ -57,6 +67,7 @@ function addToCartClicked(event) {
     addItemToCart(title, price, imageSrc)
     updateCartTotal()
 }
+
 //add item to the cart
 function addItemToCart(title, price, imageSrc) {
     //var that creates a div
@@ -140,3 +151,5 @@ document.getElementById("pick").onclick = function pickradioClicked() {
     alert("You can pick up your order after 20-30 minutes");
 
 }
+
+document.getElementsByClassName("pizzaselection")
